@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Yapılacaklar Listem</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/iletisim.css">
+
+        <style media="screen">
+            *{
+                margin: 0; padding: 0;
+                box-sizing: border-box;
+                letter-spacing: 1px;
+                font-family: verdana;
+                text-transform: capitalize;
+            }
+            body{
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(45deg,teal 50%, orange 50%);
+            }
+            .container{
+                height: 450px;
+                width: 330px;
+                background: white;
+                border-radius: 5px;
+                box-shadow: white;
+                padding: 10px;
+                overflow-y: auto;
+            }
+            #input{
+                height: 50px;
+                width: 100%;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                background: #272727;
+                color: white;
+                padding: 0 10px;
+                margin: 15px 0;
+            }
+            #input::placeholder{
+                color: gray;
+            }
+         </style>
+</head>
+    
+    <body>
+
+        <div id="social">
+            <font>Spor Alemi  -  <span>Sağlıklı bir Yaşam </span></font>
+
+            <i class="fas fa-search"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <span id="menuAc"><i class="fas fa-align-justify"></i></span>
+
+        <div class="container">
+            <h1>Yapılacaklar Listem</h1>
+            
+            <div class="add-elements">
+                <input id="add" type="text" placeholder="Bir Görev Giriniz">
+                <button id="btn">Ekle</button>
+            </div>
+            
+            <div class="element-list">
+                <ul id="list">
+                    <li>2 Saat Ders Çalış</li>
+                    <li>Tüm Derslerinden Geç</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <script src="javascript/app.js"></script>
+    </body>
+    
+</html>
